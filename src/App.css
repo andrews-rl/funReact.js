@@ -1,38 +1,48 @@
-.App {
-  text-align: center;
+/* This CSS class defines styling for a container */
+.monkeycontainer {
+  display: flex; /* Uses flexbox for layout */
+  max-width: 250px; /* Sets the maximum width of the container */
+  max-height: 250px; /* Sets the maximum height of the container */
+  justify-content: center; /* Horizontally centers content within the container */
+  align-items: center; /* Vertically centers content within the container */
+  margin: 0 auto; /* Centers the container horizontally on the page */
+  border: 10px solid #000407; /* Adds a thick black border */
+  overflow: hidden; /* Hides content that exceeds the container's dimensions */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* This CSS class defines styling for an image within the container */
+.monkey {
+  max-width: 100%; /* Ensures the image scales within the container width */
+  max-height: 100%; /* Ensures the image scales within the container height */
+  object-fit: cover; /* Maintains aspect ratio and covers the container */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* This CSS class defines styling for another container */
+.LvT-container {
+  display: flex; /* Uses flexbox for layout */
+  max-width: 250px; /* Sets the maximum width of the container */
+  max-height: 250px; /* Sets the maximum height of the container */
+  justify-content: center; /* Horizontally centers content within the container */
+  align-items: center; /* Vertically centers content within the container */
+  margin: 0 auto; /* Centers the container horizontally on the page */
+  border: 10px solid #28ad33; /* Adds a thick green border */
+  overflow: hidden; /* Hides content that exceeds the container's dimensions */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* This CSS class defines styling for an image within the second container */
+.LvTimage {
+  max-width: 100%; /* Ensures the image scales within the container width */
+  max-height: 100%; /* Ensures the image scales within the container height */
+  object-fit: cover; /* Maintains aspect ratio and covers the container */
 }
 
-.App-link {
-  color: #61dafb;
+/* This CSS class defines styling for the main page */
+.mainPage {
+  background-color: #207794; /* Sets the background color to a shade of blue */
+  height: 100%; /* Sets the height of the element to 100% of its parent container */
+  width: 100%; /* Sets the width of the element to 100% of its parent container */
+  position: absolute; /* Positions the element absolutely within its parent */
+  top: 0; /* Aligns the top edge of the element with the top of its parent */
+  left: 0; /* Aligns the left edge of the element with the left of its parent */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
